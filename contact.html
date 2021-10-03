@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/portfolio.css">
-    <link rel="stylesheet" href="../static/css/all.css">
-    <link rel="shortcut icon" type="image/png" href="../imgs/logo.png">
+    <link rel="stylesheet" href="static/contact.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png">
+    <link rel="stylesheet" href="static/css/all.css">
+    <link rel="stylesheet" href="static/contact_bug.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>Portfolio | SaHul Kola</title>
+    <title>Contact | SaHul Kola</title>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <div class="side-logo">
                 <div class="logo">
                     <div>
-                        <p><img src="../imgs/logo.png" alt=""
+                        <p><img src="imgs/logo.png" alt=""
                                 style="object-fit: cover; transform: scale(0.15); margin-left: 3px;"></p>
                     </div>
                     <p><strong>SaHul</strong> Kola</p>
@@ -28,22 +29,21 @@
             <div class="nav-contents">
                 <div class="contents">
                     <ul>
-                        <a href="aboutme.html">
+                        <a href="index.html">
                             <li>About Me</li>
                         </a>
                         <a href="resume.html">
                             <li>Resume</li>
                         </a>
-                        <a href="portfolio.html" class="bold">
+                        <a href="portfolio.html">
                             <li>Portfolio</li>
                         </a>
                         <a href="contact.html">
-                            <li>Contact</li>
+                            <li class="bold">Contact</li>
                         </a>
                     </ul>
                 </div>
             </div>
-
             <div class="ham-burger">
                 <input type="checkbox" name="checkbox" id="side-toggle">
                 <div class="toggle">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="side-bar">
                     <ul>
-                        <a href="aboutme.html">
+                        <a href="index.html">
                             <li><i class="fad fa-home-lg-alt"></i>Home</li>
                         </a>
                         <a href="resume.html">
@@ -69,32 +69,45 @@
                     </ul>
                 </div>
             </div>
+
         </nav>
         <header>
             <div class="contact_area">
                 <div class="contact ">
-                    <h1>Portfolio</h1>
+                    <h1>Contact</h1>
                 </div>
             </div>
         </header>
-        <h2>My Works</h2>
+        <h2>Get in touch</h2>
         <main>
-            <div>
-                <div class="portfolio-bg">
-                    <a href="https://budgetbuddyapp.herokuapp.com/" target="_blank"><img src="../imgs/portfolio-1.PNG"
-                            alt=""></a>
+
+            <div class="address">
+                <div>
+                    <i class="fad fa-map-marker-alt"></i>
+                    <p>Hyderabad <span></br> I am based out of Hyderabad,Telangana</span></p>
                 </div>
-                <p><span>Budget Buddy - a personal expense Tracker</span></br>This project secured top 10 position in
-                    India's Largest Build-A-Thon on Modern Application Development, a 7 Days Training Program on
-                    Building Morden Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project
-                    Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with
-                    <strong>VMware IT Academy</strong></p>
+                <div>
+                    <i class="fad fa-envelope"></i>
+                    <p>mail2sahul.js@gmail.com <span> </br>Mail me at the given address or Use the contact form. </span>
+                    </p>
+                </div>
             </div>
-            <div>
-                <div class="portfolio-bg">
-                    <a href="#" target="_blank"><img src="../imgs/portfolio-2.jpg" alt=""></a>
-                </div>
-                <p> A Blog in HashNode <span>Title: Git with GitHub</span></p>
+            <div class="address">
+                <h3>How can I help you?</h3>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Mobile Number" maxlength="10" required>
+                        <button>Send Message</button>
+
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </div>
+                    <div>
+                    </div>
+                </form>
             </div>
         </main>
         <main id="main-two">
@@ -119,7 +132,7 @@
                             <li>Email</li>
                         </a>
                     </ul>
-                    <p class="copyrights">&copy 2021 All rights reserved <a href="aboutme.html"
+                    <p class="copyrights">&copy 2021 All rights reserved <a href="index.html"
                             style="cursor:pointer">Sahul Kola.</a></p>
                 </div>
             </div>
