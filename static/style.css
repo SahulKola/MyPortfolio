@@ -5,6 +5,9 @@
     --secondary-color: #f1d302;
     --accent-color : #4A6583;
     --bg-color: #222;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 * {
     margin: 0;
@@ -551,4 +554,18 @@ footer {
         font-size: 12px;
     }
     
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0,0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #333;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #222;
 }
