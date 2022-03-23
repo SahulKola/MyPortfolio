@@ -295,8 +295,9 @@ img {
     background: #aaa;
 }
 .content button:hover{
-    background: var(--secondary-color);
-    color: #222;
+    background: none;
+    color: var(--secondary-colors);
+    border: 3px solid var(--secondary-color);
     font-weight: bold;
 }
 main {
