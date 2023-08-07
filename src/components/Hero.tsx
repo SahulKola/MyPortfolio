@@ -1,44 +1,121 @@
 import imgUrl from "../assets/img.jpg";
+import { Link } from "react-router-dom";
+import { SiHashnode } from "react-icons/si";
+import {
+  IoLogoLinkedin,
+  IoLogoTwitter,
+  IoLogoGithub,
+  IoIosMail,
+} from "react-icons/io";
+
+import { FaCode, FaPalette } from "react-icons/fa6";
+
+const iconsArray = [
+  {
+    name: <IoLogoLinkedin />,
+    url: "https://www.linkedin.com/in/sahulkola",
+    color: "#0A66C2",
+  },
+  {
+    name: <IoLogoGithub />,
+    url: "https://www.github.com/sahulkola",
+  },
+  {
+    name: <IoLogoTwitter />,
+    url: "https://www.twitter.com/sahulkola",
+  },
+
+  {
+    name: <IoIosMail />,
+    url: "mailto:mail2sahul.js@gmail.com",
+  },
+
+  {
+    name: <SiHashnode size={20} />,
+    url: "https://sahulkola.hashnode.dev/",
+  },
+];
+
 const Hero = () => {
   return (
-    <section className="relative flex flex-col md:flex-row justify-center items-center pt-6">
-      <div className="max-w-[365px] h-[365px] border-[18px] box-shadow border-solid border-border rounded-full overflow-hidden">
-        <img src={imgUrl} alt="" className="w-full h-full object-cover" />
-      </div>
-      <section className="flex flex-col justify-stretch grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
-        <p className=" inline-block relative w-[120px] text-xl text-white-100 before:content-[''] before:absolute before:bottom-0 before:w-full before:h-[3px] before:bg-border after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-accent after:w-[50px] after:h-[3px]">
-          What I Do
-        </p>
-        <p className="inline-block  self-start px-5 py-1 border-accent border-2 text-white-100 border-solid rounded-3xl btn-shadow">
-          2018 - 2022
-        </p>
-        <p className="text-xl text-white-400">UI Developer</p>
-        <h2 className="mt-2 text-5xl text-white-100 font-sm">Sai Kumar Kola</h2>
-        <div className="icons"></div>
-        <p className=" mt-5 text-base text-white-400">
-          I am a self-taught Web Developer who is passionate about bringing
-          client's visions to life. My strongest skill is my creativity. Being
-          able to gather client's requirements and translate those into an
-          engaging, effective, and unique website with minimal and user-friendly
-          UI.{" "}
-          <p className="hover:underline cursor-pointer">Let's get talking</p>
-        </p>
-        <div className="mt-8">
-          <a
-            href="/download"
-            className="btn border-accent hover:bg-accent hover:text-grey-400"
-          >
-            Download CV
-          </a>
-          <a
-            href="/contact"
-            className="btn ml-4 border-white-300  hover:bg-white-300 hover:text-grey-400"
-          >
-            Contact
-          </a>
+    <>
+      <section className="relative flex flex-col md:flex-row justify-center items-center wrapper pt-6 pb-10">
+        <div className="max-w-[365px] h-[365px] border-[18px] box-shadow border-solid border-border rounded-full overflow-hidden">
+          <img src={imgUrl} alt="" className="w-full h-full object-cover" />
         </div>
+        <section className="flex flex-col justify-stretch grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
+          <p className="text-xl text-white-400">UI Developer</p>
+          <h2 className="mt-2 text-5xl text-white-100 font-sm">
+            Sai Kumar Kola
+          </h2>
+          <div className="mt-3 flex justify-start items-center gap-4">
+            {iconsArray.map(icon => (
+              <Link to={icon.url} target="_blank">
+                <span
+                  className={`text-white-500 text-2xl hover:text-white-100 hover:-translate-y-1 transition-all cursor-pointer`}
+                >
+                  {icon.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+          <p className=" mt-5 text-base text-white-400">
+            I am a self-taught Web Developer who is passionate about bringing
+            client's visions to life. My strongest skill is my creativity. Being
+            able to gather client's requirements and translate those into an
+            engaging, effective, and unique website with minimal and
+            user-friendly UI. <br />
+            <p className="relative inline-block cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-1 before:w-full before:h-px hover:before:bg-accent transition-all">
+              Let's get talking
+            </p>
+          </p>
+          <div className="mt-8">
+            <a
+              href="./Resume-SaiKumarKola.pdf"
+              className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors"
+            >
+              Download CV
+            </a>
+            <a
+              href="/contact"
+              className="btn ml-4 border-white-300  hover:bg-white-300 hover:text-grey-400 transition-colors"
+            >
+              Contact
+            </a>
+          </div>
+        </section>
+        <section></section>
       </section>
-    </section>
+      <section className="wrapper mb-20">
+        <h2 className="heading mt-10">What I Do</h2>
+        <section className="grid md:grid-cols-2 gap-0 md:gap-5">
+          <section className="flex justify-start items-start basis-1/2 mb-5 md:mb-0">
+            <FaCode size={30} className="shrink-0 text-accent" />
+            <div className="pl-2 text-white-100 ">
+              <h3 className="text-2xl font-m">Web Development</h3>
+              <p className="text-base text-white-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Beatae, doloremque magni? Quidem, eligendi perspiciatis quam
+                eius labore est, illo quos, hic sequi magni dolorum harum
+                dolorem ipsum similique illum atque?
+              </p>
+            </div>
+          </section>
+          <section className="flex justify-start items-start basis-1/2">
+            <FaPalette size={30} className="shrink-0 text-accent" />
+            <div className="pl-2 text-white-100 ">
+              <h3 className="text-2xl font-m">UI/UX</h3>
+              <p className="text-base text-white-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Beatae, doloremque magni? Quidem, eligendi perspiciatis quam
+                eius labore est, illo quos, hic sequi magni dolorum harum
+                dolorem ipsum similique illum atque?
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </>
   );
 };
 
