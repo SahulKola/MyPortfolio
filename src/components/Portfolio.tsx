@@ -1,5 +1,6 @@
 import SectionHeader from "./SectionHeader";
 import { portfolios } from "../data";
+import { useEffect } from "react";
 interface portfolioI {
   id: number;
   name: string;
@@ -10,6 +11,9 @@ interface portfolioI {
 }
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "Portfolio | Sai Kumar Kola";
+  }, []);
   return (
     <>
       <SectionHeader title="Portfolio" caption="My Works" />

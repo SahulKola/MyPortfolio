@@ -13,7 +13,7 @@ const FooterNav = () => {
       if (!footerElem) {
         return;
       }
-      if (currentScroll > scrollPos) {
+      if (currentScroll < scrollPos) {
         footerElem.style.transform = "translate(-50%,-50%)";
       } else {
         footerElem.style.transform = "translate(-50%,100%)";

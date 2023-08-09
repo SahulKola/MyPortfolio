@@ -1,6 +1,6 @@
 import { HiReceiptPercent } from "react-icons/hi2";
-import { Education } from "../data";
-interface edu {
+import { Education } from "../../data";
+interface IEdu {
   id: Number;
   name: String;
   degree: String;
@@ -15,7 +15,7 @@ const EducationComponent = () => {
   return (
     <section className=" basis-1/2">
       <h2 className="heading">Education</h2>
-      {Education.map((degree: edu) => (
+      {Education.map((degree: IEdu) => (
         <section className="text-white-100 border-solid border-l-2 border-grey-100 ml-4 pt-3 pb-3 first-of-type:pt-0 last-of-type:mb-3">
           <section className="flex justify-start items-center">
             <p className="year -ml-4 text-center">{degree.year}</p>

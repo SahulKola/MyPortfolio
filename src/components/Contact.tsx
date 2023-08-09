@@ -1,7 +1,12 @@
 import SectionHeader from "./SectionHeader";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
 import { ReactComponent as SVGScooter } from "../hello.svg";
+import { useEffect } from "react";
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Contact | Sai Kumar Kola";
+  }, []);
+
   return (
     <>
       <SectionHeader title="Contact" caption="Get In Touch" />
