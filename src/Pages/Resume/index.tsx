@@ -1,5 +1,5 @@
 import EducationComponent from "./EducationComponent";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../../components/SectionHeader";
 import Certificate from "./Certificate";
 import WorkComponent from "./WorkComponent";
 import Skills from "./Skills";
@@ -13,7 +13,7 @@ const Resume = () => {
     <>
       <SectionHeader title="Resume" caption="My Resume" />
       <section className="wrapper">
-        <section className="grid md:grid-cols-2 ">
+        <section className="grid md:grid-cols-2 gap-0 md:gap-5 ">
           <EducationComponent />
           <WorkComponent />
         </section>
