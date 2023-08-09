@@ -1,4 +1,4 @@
-import imgUrl from "../assets/profile-img.jpg";
+import imgUrl from "../../assets/profile-img.jpg";
 import { Link } from "react-router-dom";
 import { SiHashnode } from "react-icons/si";
 import {
@@ -74,23 +74,22 @@ const Hero = () => {
             able to gather client's requirements and translate those into an
             engaging, effective, and unique website with minimal and
             user-friendly UI. <br />
-            <p className="relative inline-block cursor-pointer before:content-[''] before:absolute before:left-0 before:bottom-1 before:w-full before:h-px hover:before:bg-accent transition-all">
-              Let's get talking
-            </p>
           </p>
           <div className="mt-8">
-            <a
-              href="./Resume-SaiKumarKola.pdf"
+            <Link
+              to={require("../../assets/Resume-SaiKumarKola.pdf")}
               className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors"
+              download="Resume - Sai Kumar Kola"
+              target="_blank"
             >
               Download CV
-            </a>
-            <a
-              href="/contact"
+            </Link>
+            <Link
+              to="/contact"
               className="btn ml-4 border-white-300  hover:bg-white-300 hover:text-grey-400 transition-colors"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </section>
         <section></section>

@@ -1,6 +1,6 @@
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../../components/SectionHeader";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
-import { ReactComponent as SVGScooter } from "../hello.svg";
+import { ReactComponent as SVGScooter } from "../../assets/fauxCodeArt.svg";
 import { useEffect } from "react";
 const Contact = () => {
   useEffect(() => {

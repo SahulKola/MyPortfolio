@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FooterNav from "./components/FooterNav";
-import Hero from "./components/Hero";
+import Hero from "./Pages/Home";
 import { Routes, Route } from "react-router-dom";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume/Index";
-import Contact from "./components/Contact";
+import Portfolio from "./Pages/Portfolio";
+import Resume from "./Pages/Resume";
+import Contact from "./Pages/Contact";
 import { useEffect, useState } from "react";
 function App() {
   const [Width, setWidth] = useState(0);

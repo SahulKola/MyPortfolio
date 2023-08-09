@@ -1,14 +1,7 @@
-import SectionHeader from "./SectionHeader";
-import { portfolios } from "../data";
+import SectionHeader from "../../components/SectionHeader";
+import { portfolios } from "../../data";
 import { useEffect } from "react";
-interface portfolioI {
-  id: number;
-  name: string;
-  description: string;
-  url: string;
-  thumbnail: string;
-  techstack: string[];
-}
+import { IPortfolio } from "../../data";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -19,7 +12,7 @@ const Portfolio = () => {
       <SectionHeader title="Portfolio" caption="My Works" />
       <section className="wrapper mt-10">
         <section className="grid md:grid-cols-2 -mx-4">
-          {portfolios.map((portfolio: portfolioI) => (
+          {portfolios.map((portfolio: IPortfolio) => (
             <section className="flex flex-col items-start justify-between basis-1/2 text-white-100 mb-10 mx-4">
               <div className="relative md:min-h-[200px] lg:min-h-[320px] rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-grey-500">
                 <img

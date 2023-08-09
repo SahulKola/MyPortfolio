@@ -2,7 +2,8 @@ import Jntuh from "./assets/projects/jntuh-gpa-calc.png";
 import CareerHub from "./assets/projects/career-hub.png";
 import AngularTodoList from "./assets/projects/angular-todo-list.png";
 import BudgetBuddy from "./assets/projects/budget-buddy.png";
-interface edu {
+
+export interface IEdu {
   id: Number;
   name: String;
   degree: String;
@@ -12,7 +13,7 @@ interface edu {
   year: String;
   percentage: String;
 }
-export const Education: edu[] = [
+export const Education: IEdu[] = [
   {
     id: 1,
     name: "ACE Engineering College",
@@ -44,7 +45,7 @@ export const Education: edu[] = [
   },
 ];
 
-interface workExpI {
+export interface IWorkExp {
   id: Number;
   name: String;
   link: String;
@@ -54,7 +55,7 @@ interface workExpI {
   work: String[];
   year: String;
 }
-export const workExp: workExpI[] = [
+export const workExp: IWorkExp[] = [
   {
     id: 1,
     name: "Media.net",
@@ -73,8 +74,15 @@ export const workExp: workExpI[] = [
     year: "May 2022 - Present",
   },
 ];
-
-export const portfolios = [
+export interface IPortfolio {
+  id: number;
+  name: string;
+  description: string;
+  url: string;
+  thumbnail: string;
+  techstack: string[];
+}
+export const portfolios: IPortfolio[] = [
   {
     id: 1,
     name: "Angular Todo List",
@@ -110,75 +118,5 @@ export const portfolios = [
     url: "https://www.google.com",
     thumbnail: CareerHub,
     techstack: ["HTML", "CSS", "MYSQL", "Bootstrap"],
-  },
-];
-
-export const DevIcons = [
-  {
-    id: 1,
-    name: "HTML",
-    url: `<i class="devicon-html5-plain"></i>`,
-  },
-  {
-    id: 2,
-    name: "CSS",
-    url: `<i class="devicon-css3-plain"></i>`,
-  },
-  {
-    id: 3,
-    name: "Tailwind",
-    url: `<i class="devicon-tailwindcss-plain"></i>`,
-  },
-
-  {
-    id: 4,
-    name: "Sass",
-    url: `<i class="devicon-sass-original"></i>`,
-  },
-
-  {
-    id: 5,
-    name: "React",
-    url: `<i class="devicon-react-original"></i>`,
-  },
-  {
-    id: 6,
-    name: "Angular",
-    url: `<i class="devicon-angularjs-plain"></i>`,
-  },
-  {
-    id: 7,
-    name: "MarkDown",
-    url: `<i class="devicon-markdown-original"></i>`,
-  },
-  {
-    id: 8,
-    name: "JavaScript",
-    url: `<i class="devicon-javascript-plain"></i>`,
-  },
-  {
-    id: 9,
-    name: "MarkDown",
-    url: `<i class="devicon-typescript-plain"></i>`,
-  },
-  {
-    name: "VS Code",
-    url: `<i class="devicon-vscode-plain"></i>`,
-  },
-  {
-    name: "GitHub",
-    url: `<i class="devicon-git-plain"></i>`,
-  },
-  {
-    name: "GitHub",
-    url: `<i class="devicon-github-original"></i>`,
-  },
-  {
-    name: "Figma",
-    url: `<i class="devicon-figma-plain"></i>`,
-  },
-  {
-    name: "Redux",
-    url: `<i class="devicon-redux-original"></i>`,
   },
 ];
