@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       <section className="relative flex flex-col md:flex-row justify-center items-center wrapper pt-6 pb-10">
-        <div className="max-w-[365px] w-full h-[365px] border-[18px] bg-grey-500 box-shadow border-solid border-border rounded-full overflow-hidden">
+        <div className="max-w-[365px] w-full max-h-[365px] border-[18px] bg-grey-500 box-shadow border-solid border-border rounded-full overflow-hidden">
           <img
             src={imgUrl}
             alt="My Posing as Professional xP"
@@ -52,12 +52,12 @@ const Hero = () => {
             loading="lazy"
           />
         </div>
-        <section className="flex flex-col justify-stretch grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
+        <section className="flex flex-col items-center md:items-start grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
           <p className="text-xl text-white-400">UI Developer</p>
           <h2 className="mt-2 text-5xl text-white-100 font-sm">
             Sai Kumar Kola
           </h2>
-          <div className="mt-3 flex justify-start items-center gap-4">
+          <div className="mt-3 flex justify-center sm:justify-start items-center gap-4">
             {iconsArray.map(icon => (
               <Link to={icon.url} target="_blank">
                 <span
@@ -75,10 +75,10 @@ const Hero = () => {
             engaging, effective, and unique website with minimal and
             user-friendly UI. <br />
           </p>
-          <div className="mt-8">
+          <div className="mt-8 text-center sm:text-left">
             <Link
               to={require("../../assets/Resume-SaiKumarKola.pdf")}
-              className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors"
+              className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors mb-3 sm:mb-0"
               download="Resume - Sai Kumar Kola"
               target="_blank"
             >
@@ -86,7 +86,7 @@ const Hero = () => {
             </Link>
             <Link
               to="/contact"
-              className="btn ml-4 border-white-300  hover:bg-white-300 hover:text-grey-400 transition-colors"
+              className="btn ml-2 sm:ml-4 border-white-300  hover:bg-white-300 hover:text-grey-400 transition-colors"
             >
               Contact
             </Link>
