@@ -1,10 +1,14 @@
 import EducationComponent from "./EducationComponent";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../SectionHeader";
 import Certificate from "./Certificate";
 import WorkComponent from "./WorkComponent";
 import Skills from "./Skills";
+import { useEffect } from "react";
 
 const Resume = () => {
+  useEffect(() => {
+    document.title = "Resume | Sai Kumar Kola";
+  }, []);
   return (
     <>
       <SectionHeader title="Resume" caption="My Resume" />

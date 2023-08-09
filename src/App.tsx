@@ -4,7 +4,7 @@ import FooterNav from "./components/FooterNav";
 import Hero from "./components/Hero";
 import { Routes, Route } from "react-router-dom";
 import Portfolio from "./components/Portfolio";
-import Resume from "./components/Resume";
+import Resume from "./components/Resume/Index";
 import Contact from "./components/Contact";
 import { useEffect, useState } from "react";
 function App() {

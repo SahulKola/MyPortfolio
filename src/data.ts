@@ -1,7 +1,7 @@
-import Jntuh from "./assets/jntuh-gpa-calc.png";
-import CareerHub from "./assets/career-hub.png";
-import AngularTodoList from "./assets/career-hub.png";
-import BudgetBuddy from "./assets/budget-buddy.png";
+import Jntuh from "./assets/projects/jntuh-gpa-calc.png";
+import CareerHub from "./assets/projects/career-hub.png";
+import AngularTodoList from "./assets/projects/angular-todo-list.png";
+import BudgetBuddy from "./assets/projects/budget-buddy.png";
 interface edu {
   id: Number;
   name: String;

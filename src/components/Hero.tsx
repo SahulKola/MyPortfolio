@@ -1,4 +1,4 @@
-import imgUrl from "../assets/img.jpg";
+import imgUrl from "../assets/profile-img.jpg";
 import { Link } from "react-router-dom";
 import { SiHashnode } from "react-icons/si";
 import {
@@ -9,6 +9,7 @@ import {
 } from "react-icons/io";
 
 import { FaCode, FaPalette } from "react-icons/fa6";
+import { useEffect } from "react";
 
 const iconsArray = [
   {
@@ -37,11 +38,19 @@ const iconsArray = [
 ];
 
 const Hero = () => {
+  useEffect(() => {
+    document.title = "Home | Sai Kumar Kola";
+  }, []);
   return (
     <>
       <section className="relative flex flex-col md:flex-row justify-center items-center wrapper pt-6 pb-10">
-        <div className="max-w-[365px] h-[365px] border-[18px] box-shadow border-solid border-border rounded-full overflow-hidden">
-          <img src={imgUrl} alt="" className="w-full h-full object-cover" />
+        <div className="max-w-[365px] w-full h-[365px] border-[18px] bg-grey-500 box-shadow border-solid border-border rounded-full overflow-hidden">
+          <img
+            src={imgUrl}
+            alt="My Posing as Professional xP"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
         </div>
         <section className="flex flex-col justify-stretch grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
           <p className="text-xl text-white-400">UI Developer</p>
