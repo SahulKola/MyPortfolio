@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       <section className="relative flex flex-col md:flex-row justify-center items-center wrapper pt-6 pb-10">
-        <div className="max-w-[365px] w-full max-h-[365px] border-[18px] bg-grey-500 box-shadow border-solid border-border rounded-full overflow-hidden">
+        <div className="max-w-[300px] w-full h-[300px] sm:max-w-[365px]  sm:h-[365px] max-h-[365px] border-[18px] bg-grey-500 box-shadow border-solid border-border rounded-full overflow-hidden">
           <img
             src={imgUrl}
             alt="My Posing as Professional xP"
