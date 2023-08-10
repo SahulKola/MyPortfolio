@@ -12,7 +12,7 @@ const Skills = () => {
           </h3>
           <section className="grid grid-cols-3 gap-1">
             {SkillsArray.map(skill => (
-              <Skill url={skill.url} name={skill.name} />
+              <Skill key={skill.name} url={skill.url} name={skill.name} />
             ))}
           </section>
         </section>
@@ -22,7 +22,7 @@ const Skills = () => {
           </h3>
           <section className="grid grid-cols-2">
             {ToolsArray.map(tool => (
-              <Skill url={tool.url} name={tool.name} />
+              <Skill key={tool.name} url={tool.url} name={tool.name} />
             ))}
           </section>
         </section>
