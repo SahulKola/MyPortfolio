@@ -59,7 +59,7 @@ const Hero = () => {
           </h2>
           <div className="mt-3 flex justify-center sm:justify-start items-center gap-4">
             {iconsArray.map(icon => (
-              <Link to={icon.url} target="_blank">
+              <Link key={icon.url} to={icon.url} target="_blank">
                 <span
                   className={`text-white-500 text-2xl hover:text-white-100 hover:-translate-y-1 transition-all cursor-pointer`}
                 >
