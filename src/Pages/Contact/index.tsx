@@ -1,6 +1,6 @@
 import SectionHeader from "../../components/SectionHeader";
 import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
-import { ReactComponent as SVGScooter } from "../../assets/fauxCodeArt.svg";
+import { ReactComponent as Art } from "../../assets/Art.svg";
 import { useEffect } from "react";
 const Contact = () => {
   useEffect(() => {
@@ -10,8 +10,11 @@ const Contact = () => {
   return (
     <>
       <SectionHeader title="Contact" caption="Get In Touch" />
-      <section className=" grid md:grid-cols-2 items-center wrapper mt-10">
-        <div className="text-white-200">
+      <section className=" grid md:grid-cols-2 items-center wrapper mt-5 sm:mt-10">
+        <section className="justify-self-center max-w-[300px] sm:max-w-[350px] w-full h-auto">
+          <Art className="w-full h-full" />
+        </section>
+        <div className="justify-self-center sm:justify-self-auto text-white-200 mb-10">
           <section className="flex justify-start items-start mb-5 md:mb-10">
             <span className="pr-2 md:pr-4">
               <FaLocationDot size={40} className="hover:text-accent" />
@@ -33,9 +36,6 @@ const Contact = () => {
             </div>
           </section>
         </div>
-        <section className="w-full h-auto my-5 md:my-0">
-          <SVGScooter className="w-full h-full" />
-        </section>
       </section>
     </>
   );
