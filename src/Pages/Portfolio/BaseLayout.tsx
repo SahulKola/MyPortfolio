@@ -8,7 +8,7 @@ const BaseLayout = ({
   flag: string;
 }) => {
   return (
-    <section className="flex flex-col items-start justify-start basis-1/2 text-white-100 mb-10 mx-4">
+    <section className="flex flex-col items-center sm:items-start justify-start basis-1/2 text-white-100 mb-10 mx-4">
       <div className="relative md:min-h-[200px] lg:min-h-[320px] rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-grey-500">
         <a href={portfolio.url} target="_blank" rel="noopener noreferrer">
           <img
