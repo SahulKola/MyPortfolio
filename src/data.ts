@@ -139,17 +139,17 @@ export const Recognizations = [
     id: 1,
     name: "Finalist - VMware Taznu Build a Thon",
     description:
-      "VMware Tanzu Build-A-Thon, a 7 Days Training Program on Building Modern Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with VMware IT Academy",
-    url: "ttps://www.dropbox.com/s/d8xgzzllxo8bbvl/Finalist%20-%20VMware%20Tanzu%20Build%20a%20Thon.pdf?dl=0",
+      "Certificate for outstanding performance in India's Largest Build-A-Thon on Modern Application Development, a 7 Days Training Program on Building Morden Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with VMware IT Academy",
+    url: "https://www.dropbox.com/s/d8xgzzllxo8bbvl/Finalist%20-%20VMware%20Tanzu%20Build%20a%20Thon.pdf?dl=0",
     thumbnail: BuildAThon,
-    prop: "Project Developed in Build A Thon",
+    prop: "Project Developed in Build-a-thon",
     techstack: ["Budget Buddy"],
   },
   {
     id: 2,
     name: "P3 Grand Open March 2017 - Hyderabad",
     description:
-      "Certificate for outstanding performance in India's Largest Build-A-Thon on Modern Application Development, a 7 Days Training Program on Building Morden Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with",
+      "It initially began as a simple hobby to solve the cube and quickly evolved into a passion for competitive solving. That interest  led me to dive deeper into the world of the Rubik's Cube by learning and mastering various algorithms for permutation and combination. Utilizing the F2L (First Two Layers) method, which was considered quite efficient at the time, I was able to solve the cube at a relatively fast pace.",
     url: "https://www.worldcubeassociation.org/persons/2017NAAN01",
     thumbnail: Rubiks,
     prop: "Best Score",
