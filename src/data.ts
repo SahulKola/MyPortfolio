@@ -69,7 +69,7 @@ export const workExp: IWorkExp[] = [
     work: [
       "Developed Ad variations like Keyword Blocks, Search Engine Result Pages, Interstitial Ads, and Lander Pages.",
       "Worked with Skenzo Template Language Tags which provides ads from the backend.",
-      "Created Custom Snippets for our Dev team, which minimized 30% of our development time.",
+      "Created Custom Snippets for quite a few ad variations, which minimized 20% of my development time.",
       "Collaborated with Business Development Team and QA team to ensure UI was implemented correctly.",
       "Delivered 100+ good-performing creative ads and lander pages with a 90% acceptance rate for premium publishers.",
       "Developed quality ads during the Black Friday Sale Season, with multiple ad variations.",
