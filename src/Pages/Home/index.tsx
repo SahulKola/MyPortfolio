@@ -37,6 +37,20 @@ const iconsArray = [
   },
 ];
 
+const whatIDo = [
+  {
+    id: 1,
+    title: "Web Development",
+    icon: <FaCode size={30} className="shrink-0 text-accent" />,
+    desc: "I'm a front-end developer with a passion for creating visually appealing and user-friendly websites. I have a solid understanding of HTML/CSS/JavaScript and responsive web design principles. To improve code quality and productivity during development, I use React, TypeScript, Tailwind, and preprocessors like Sass. I strive to deliver high-quality code and work effectively with cross-functional teams to achieve project goals. Currently, I'm exploring Angular, although the learning curve is long. I think it would be great to learn such a powerful framework like Angular.",
+  },
+  {
+    id: 2,
+    title: "UI/UX",
+    icon: <FaPalette size={30} className="shrink-0 text-accent" />,
+    desc: "In addition to my interest in development, I have a keen interest in user interface design. I believe that possessing design skills will greatly enhance my understanding of the fundamental logic behind User Interfaces and further improve my development process. I have acquired sufficient proficiency to design a website from its initial ideation stage all the way through the process of sketching, creating Sitemaps, Wireframing, Prototyping, and more. All of these tasks are efficiently accomplished using the design tool, Figma.",
+  },
+];
 const Hero = () => {
   useEffect(() => {
     document.title = "Home | Sai Kumar Kola";
@@ -97,30 +111,20 @@ const Hero = () => {
       <section className="wrapper mb-20">
         <h2 className="heading mt-10">What I Do</h2>
         <section className="grid md:grid-cols-2 gap-0 md:gap-5">
-          <section className="flex justify-start items-start basis-1/2 mb-5 md:mb-0">
-            <FaCode size={30} className="shrink-0 text-accent" />
-            <div className="pl-2 text-white-100 ">
-              <h3 className="text-2xl font-m">Web Development</h3>
-              <p className="text-base text-white-400">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Beatae, doloremque magni? Quidem, eligendi perspiciatis quam
-                eius labore est, illo quos, hic sequi magni dolorum harum
-                dolorem ipsum similique illum atque?
-              </p>
-            </div>
-          </section>
-          <section className="flex justify-start items-start basis-1/2">
-            <FaPalette size={30} className="shrink-0 text-accent" />
-            <div className="pl-2 text-white-100 ">
-              <h3 className="text-2xl font-m">UI/UX</h3>
-              <p className="text-base text-white-400">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Beatae, doloremque magni? Quidem, eligendi perspiciatis quam
-                eius labore est, illo quos, hic sequi magni dolorum harum
-                dolorem ipsum similique illum atque?
-              </p>
-            </div>
-          </section>
+          {whatIDo.map(child => (
+            <section
+              key={child.id}
+              className="flex justify-start items-start basis-1/2 mb-5 md:mb-0"
+            >
+              {child.icon}
+              <div className="pl-2 text-white-100 ">
+                <h3 className="text-2xl font-m">{child.title}</h3>
+                <p className="text-base mt-5 text-justify text-white-400">
+                  {child.desc}
+                </p>
+              </div>
+            </section>
+          ))}
         </section>
       </section>
     </>
