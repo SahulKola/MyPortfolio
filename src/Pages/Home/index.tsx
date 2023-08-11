@@ -110,19 +110,19 @@ const Hero = () => {
       </section>
       <section className="wrapper mb-20">
         <h2 className="heading mt-10">What I Do</h2>
-        <section className="grid md:grid-cols-2 gap-0 md:gap-5">
+        <section className="grid md:grid-cols-2 gap-0 md:gap-8">
           {whatIDo.map(child => (
             <section
               key={child.id}
-              className="flex justify-start items-start basis-1/2 mb-5 md:mb-0"
+              className="flex flex-col justify-start items-start basis-1/2 mb-5 md:mb-0"
             >
-              {child.icon}
-              <div className="pl-2 text-white-100 ">
-                <h3 className="text-2xl font-m">{child.title}</h3>
-                <p className="text-base mt-5 text-justify text-white-400">
-                  {child.desc}
-                </p>
+              <div className="flex">
+                {child.icon}
+                <h3 className="pl-2 text-2xl font-m text-white-100">
+                  {child.title}
+                </h3>
               </div>
+              <p className="text-base mt-2 text-white-400">{child.desc}</p>
             </section>
           ))}
         </section>
