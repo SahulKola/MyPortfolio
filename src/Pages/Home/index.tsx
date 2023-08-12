@@ -42,7 +42,7 @@ const whatIDo = [
     id: 1,
     title: "Web Development",
     icon: <FaCode size={30} className="shrink-0 text-accent" />,
-    desc: "I'm a front-end developer with a passion for creating visually appealing and user-friendly websites. I have a solid understanding of HTML/CSS/JavaScript and responsive web design principles. To improve code quality and productivity during development, I use React, TypeScript, Tailwind, and preprocessors like Sass. I strive to deliver high-quality code and work effectively with cross-functional teams to achieve project goals. Currently, I'm exploring Angular, although the learning curve is long. I think it would be great to learn such a powerful framework like Angular.",
+    desc: "I'm a front-end developer with a passion for creating visually appealing and user-friendly websites. I have a solid understanding of HTML,CSS,JavaScript and responsive web design principles. To improve code quality and for productivity during development, I use React, TypeScript, Tailwind, and preprocessors like SASS. I strive to deliver high-quality code and work effectively with cross-functional teams to achieve project goals. Currently, I'm exploring Angular, although the learning curve is long. I think it would be great to learn such a powerful framework like Angular.",
   },
   {
     id: 2,
