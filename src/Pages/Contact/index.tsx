@@ -15,12 +15,11 @@ const Contact = () => {
           <Art className="w-full h-full" />
         </section>
         <div className="justify-self-center sm:justify-self-auto text-white-200 mb-10">
-          <section className="flex justify-start items-start mb-5 md:mb-10">
+          <section className="flex justify-start items-center mb-5 md:mb-10">
             <span className="pr-2 md:pr-4">
               <FaLocationDot size={40} className="hover:text-accent" />
             </span>
             <div>
-              <p className="text-base text-white-400">I am Based out of </p>
               <h3 className=" text-base md:text-3xl font-m">Hyderabad</h3>
             </div>
           </section>

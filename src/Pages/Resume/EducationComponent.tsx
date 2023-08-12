@@ -30,7 +30,10 @@ const EducationComponent = () => {
             <p className="text-white-400">{degree.location}</p>
             <section className="flex justify-start items-center">
               <HiReceiptPercent fontSize={20} />
-              <p className="pl-2">CGPA : {degree.percentage}</p>
+              <p className="pl-2">
+                {degree.degree === "Intermediate" ? "Percentage" : "CGPA"} :{" "}
+                {degree.percentage}
+              </p>
             </section>
           </section>
         </section>
