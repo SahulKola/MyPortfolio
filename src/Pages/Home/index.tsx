@@ -1,6 +1,6 @@
 import imgUrl from "../../assets/profile-img.jpg";
 import { Link } from "react-router-dom";
-import { SiHashnode } from "react-icons/si";
+import { SiBehance } from "react-icons/si";
 import {
   IoLogoLinkedin,
   IoLogoTwitter,
@@ -32,8 +32,8 @@ const iconsArray = [
   },
 
   {
-    name: <SiHashnode size={20} />,
-    url: "https://sahulkola.hashnode.dev/",
+    name: <SiBehance size={20} />,
+    url: "https://www.behance.net/SaHulKola",
   },
 ];
 
