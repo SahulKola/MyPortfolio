@@ -1,6 +1,7 @@
 import Jntuh from "./assets/projects/jntuh-gpa-calc.png";
 import CareerHub from "./assets/projects/career-hub.png";
 import AngularTodoList from "./assets/projects/angular-todo-list.png";
+import AngularWeatherApp from "./assets/projects/angular-weather-app.png";
 import BudgetBuddy from "./assets/projects/budget-buddy.png";
 import LittleLemon from "./assets/projects/little-lemon.png";
 import BuildAThon from "./assets/build-a-thon.png";
@@ -89,15 +90,24 @@ export interface IPortfolio {
 export const portfolios: IPortfolio[] = [
   {
     id: 1,
+    name: "Simple Weather App",
+    description:
+      "Simple weather application with minimal & user-friendly UI, built with Angular and OpenWeather API. It allows users to select their desired location and retrieve relevant weather information. The displayed weather forecast includes essential data such as the current temperature, location details, maximum and minimum temperatures, sunrise and sunset times, humidity levels, wind speed, and atmospheric pressure.",
+    url: "https://sahulkola.github.io/angular-weather-app/",
+    thumbnail: AngularWeatherApp,
+    techstack: ["Angular", "TypeScript", "OpenWeather API"],
+  },
+  {
+    id: 2,
     name: "Angular Todo List",
     description:
       "This is an Angular-based application called Simple Todo List, designed to assist users in organizing and prioritizing their daily tasks. The application enables users to plan and manage their tasks effectively, ensuring that important tasks receive priority. By using this application, users can streamline their daily workflow and enhance their productivity. ( PS: The primary purpose to build this app is to get a fundamental understanding of Angular's functionality and working. ) ",
-    url: "#",
+    url: "https://sahulkola.github.io/angular-todo-list/",
     thumbnail: AngularTodoList,
     techstack: ["Angular", "TypeScript"],
   },
   {
-    id: 2,
+    id: 3,
     name: "Little Lemon Restaurant",
     description:
       "The Little Lemon website is an online platform designed to provide information and services related to the Little Lemon restaurant. It serves as a digital hub where customers can explore various aspects of the restaurant, make reservations, access menus, and stay updated with the latest news and promotions.",
@@ -106,7 +116,7 @@ export const portfolios: IPortfolio[] = [
     techstack: ["React", "React-Router-DOM", "Sass"],
   },
   {
-    id: 3,
+    id: 4,
     name: "JNTUH GPA Calc. - SGPA & CGPA Calculator",
     description:
       "A Web-based application that offers students to do mathematical computations which helps in finding accurate CGPA & SGPA with an interactive and user-friendly Graphical User Interface. It includes features like Target GPA Calculator which generates average SGPA to be scored in upcoming semesters to maintain Target GPA.The GPA score will be recorded in the database and users can track their progress by login.",
@@ -115,7 +125,7 @@ export const portfolios: IPortfolio[] = [
     techstack: ["HTML", "CSS", "Bootstrap", "MYSQL", "Flask"],
   },
   {
-    id: 4,
+    id: 5,
     name: "Budget Buddy - a personal expense Tracker",
     description:
       "This project secured top 10 position in India's Largest Build-A-Thon on Modern Application Development, a 7 Days Training Program on Building Morden Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with VMware IT Academy",
@@ -124,7 +134,7 @@ export const portfolios: IPortfolio[] = [
     techstack: ["HTML", "CSS", "Bootstrap", "AOS.js", "MYSQL", "Flask"],
   },
   {
-    id: 5,
+    id: 6,
     name: "Career Hub",
     description:
       "A Job portal application that connects recruiters and job seekers where recruiters are the source of the resources, and the job seeker can find and apply for their targeted job. Users will have access to the career portal page where current openings are displayed which were uploaded by the recruiter of the company via the admin interface",
