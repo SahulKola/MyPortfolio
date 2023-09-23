@@ -15,8 +15,13 @@ const WorkComponent = () => {
   return (
     <section className="basis-1/2">
       <h2 className="heading">Work Experience</h2>
-      {workExp.map((work: IWorkExp) => (
-        <section className="text-white-100 border-solid border-l-2 border-b-2 border-grey-100 border-b-grey-400 ml-4 pt-3 mb-3 first-of-type:p-0 last-of-type:mb-3">
+      {workExp.map((work: IWorkExp, index) => (
+        <section
+          data-aos="fade-down"
+          data-aos-duration="300"
+          data-aos-delay={index * 100}
+          className="text-white-100 border-solid border-l-2 border-b-2 border-grey-100 border-b-grey-400 ml-4 pt-3 mb-3 first-of-type:p-0 last-of-type:mb-3"
+        >
           <section className="flex justify-start items-center">
             <p className="year -ml-4">{work.year}</p>
             <Link to="https://www.media.net" target="_blank">

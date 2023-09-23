@@ -57,14 +57,19 @@ const Certificate = () => {
       <h2 className="heading">Licenses & Certificates</h2>
       <section>
         <section className="grid md:grid-cols-2 gap-5">
-          {Certificates.map(certi => (
+          {Certificates.map((certi, index) => (
             <Link
               to={certi.link}
               className="block"
               target="_blank"
               key={certi.name}
             >
-              <section className="flex justify-start items-center h-full border-solid border-2 border-grey-100 rounded-lg text-white-500 overflow-hidden cursor-pointer hover:-translate-y-2 hover:transition-transform">
+              <section
+                data-aos="fade-down"
+                data-aos-duration="500"
+                data-aos-delay={index * 100}
+                className="flex justify-start items-center h-full border-solid border-2 border-grey-100 rounded-lg text-white-500 overflow-hidden cursor-pointer hover:-translate-y-2 hover:transition-transform"
+              >
                 <div className=" flex items-center justify-center basis-1/3 shrink-0 bg-grey-100 min-h-[140px] self-stretch">
                   {certi.logo}
                 </div>

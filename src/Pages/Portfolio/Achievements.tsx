@@ -6,8 +6,8 @@ const Achievements = () => {
     <section>
       <h1 className="heading">Achievements</h1>
       <section className="grid md:grid-cols-2 -mx-4">
-        {Recognizations.map((regcog: IPortfolio) => (
-          <BaseLayout flag="" portfolio={regcog} />
+        {Recognizations.map((regcog: IPortfolio, index) => (
+          <BaseLayout index={index} flag="" portfolio={regcog} />
         ))}
       </section>
     </section>

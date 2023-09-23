@@ -14,8 +14,8 @@ const Portfolio = () => {
       <SectionHeader title="Portfolio" caption="My Works" />
       <section className="wrapper mt-10">
         <section className="grid md:grid-cols-2 -mx-4">
-          {portfolios.map((portfolio: IPortfolio) => (
-            <BaseLayout flag="portfolio" portfolio={portfolio} />
+          {portfolios.map((portfolio: IPortfolio, index) => (
+            <BaseLayout index={index} flag="portfolio" portfolio={portfolio} />
           ))}
         </section>
         <Achievements />
