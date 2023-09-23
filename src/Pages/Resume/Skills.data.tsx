@@ -18,6 +18,7 @@ import {
 export interface ISkill {
   name: string;
   url?: any;
+  index?: number;
 }
 export const SkillsArray: ISkill[] = [
   {

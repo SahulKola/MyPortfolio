@@ -11,10 +11,20 @@ const Contact = () => {
     <>
       <SectionHeader title="Contact" caption="Get In Touch" />
       <section className=" grid md:grid-cols-2 items-center wrapper mt-5 sm:mt-10">
-        <section className="justify-self-center max-w-[300px] sm:max-w-[350px] w-full h-auto">
+        <section
+          data-aos="fade-down"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          className="justify-self-center max-w-[300px] sm:max-w-[350px] w-full h-auto"
+        >
           <Art className="w-full h-full" />
         </section>
-        <div className="justify-self-center sm:justify-self-auto text-white-200 mb-10">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          data-aos-delay="700"
+          className="justify-self-center sm:justify-self-auto text-white-200 mb-10"
+        >
           <section className="flex justify-start items-center mb-5 md:mb-10">
             <span className="pr-2 md:pr-4">
               <FaLocationDot size={40} className="hover:text-accent" />

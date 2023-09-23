@@ -11,8 +11,13 @@ const Skills = () => {
             Web Development
           </h3>
           <section className="grid grid-cols-3 gap-1">
-            {SkillsArray.map(skill => (
-              <Skill key={skill.name} url={skill.url} name={skill.name} />
+            {SkillsArray.map((skill, index) => (
+              <Skill
+                index={index}
+                key={skill.name}
+                url={skill.url}
+                name={skill.name}
+              />
             ))}
           </section>
         </section>

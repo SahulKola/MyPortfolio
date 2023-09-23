@@ -15,8 +15,13 @@ const EducationComponent = () => {
   return (
     <section className=" basis-1/2">
       <h2 className="heading">Education</h2>
-      {Education.map((degree: IEdu) => (
-        <section className="text-white-100 border-solid border-l-2 border-grey-100 ml-4 pt-3 pb-3 first-of-type:pt-0 last-of-type:mb-3">
+      {Education.map((degree: IEdu, index) => (
+        <section
+          data-aos="fade-down"
+          data-aos-duration="300"
+          data-aos-delay={index * 100}
+          className="text-white-100 border-solid border-l-2 border-grey-100 ml-4 pt-3 pb-3 first-of-type:pt-0 last-of-type:mb-3"
+        >
           <section className="flex justify-start items-center">
             <p className="year -ml-4 text-center">{degree.year}</p>
             <h3 className="pl-2 text-white-100 text-base md:text-xl font-m">

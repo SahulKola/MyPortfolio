@@ -66,7 +66,11 @@ const Hero = () => {
             loading="lazy"
           />
         </div>
-        <section className="flex flex-col items-center md:items-start grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12">
+        <section
+          data-aos="fade-left"
+          data-aos-duration="500"
+          className="flex flex-col items-center md:items-start grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12"
+        >
           <p className="text-xl text-white-400">UI Developer</p>
           <h2 className="mt-2 text-5xl text-white-100 font-sm">
             Sai Kumar Kola
@@ -111,8 +115,11 @@ const Hero = () => {
       <section className="wrapper mb-20">
         <h2 className="heading mt-10">What I Do</h2>
         <section className="grid md:grid-cols-2 gap-0 md:gap-8">
-          {whatIDo.map(child => (
+          {whatIDo.map((child, index) => (
             <section
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-delay={index * 300}
               key={child.id}
               className="flex flex-col justify-start items-start basis-1/2 mb-5 md:mb-0"
             >
