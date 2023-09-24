@@ -4,6 +4,10 @@ import AngularTodoList from "./assets/projects/angular-todo-list.png";
 import AngularWeatherApp from "./assets/projects/angular-weather-app.png";
 import BudgetBuddy from "./assets/projects/budget-buddy.png";
 import LittleLemon from "./assets/projects/little-lemon.png";
+import PortfolioImg from "./assets/projects/portfolio.png";
+import Wakanda from "./assets/projects/wakanda-lander-page.jpg";
+import HeadlinesHub from "./assets/projects/headlines-hub.jpg";
+
 import BuildAThon from "./assets/build-a-thon.png";
 import Rubiks from "./assets/rubiks.png";
 
@@ -89,25 +93,55 @@ export interface IPortfolio {
 }
 export const portfolios: IPortfolio[] = [
   {
-    id: 1,
-    name: "Simple Weather App",
+    id: 7,
+    name: "Headlines Hub. - A Short format News app",
     description:
-      "Simple weather application with minimal & user-friendly UI, built with Angular and OpenWeather API. It allows users to select their desired location and retrieve relevant weather information. The displayed weather forecast includes essential data such as the current temperature, location details, maximum and minimum temperatures, sunrise and sunset times, humidity levels, wind speed, and atmospheric pressure.",
+      "Headlines Hub is a minimal news app that provides users with a seamless news browsing experience. The app features a search functionality that allows users to quickly find news articles on any given topic of interest. Additionally, the app includes a user-friendly navigation menu that provides access to top headlines within specified categories.",
+    url: "https://sahulkola.github.io/headlines-hub/",
+    thumbnail: HeadlinesHub,
+    techstack: ["Angular", "Tailwind", "GNews API"],
+  },
+  {
+    id: 6,
+    name: "Weatherly",
+    description:
+      "Weatherly is a sophisticated weather app with a clean and intuitive interface, designed to provide users with accurate and up-to-date weather information.  The app enables users to access weather forecasts for their location and other locations of interest.",
+    // "Simple weather application with minimal & user-friendly UI, built with Angular and OpenWeather API. It allows users to select their desired location and retrieve relevant weather information. The displayed weather forecast includes essential data such as the current temperature, location details, maximum and minimum temperatures, sunrise and sunset times, humidity levels, wind speed, and atmospheric pressure.",
     url: "https://sahulkola.github.io/angular-weather-app/",
     thumbnail: AngularWeatherApp,
-    techstack: ["Angular", "TypeScript", "OpenWeather API"],
+    techstack: ["Angular", "SASS", "OpenWeather API"],
   },
   {
-    id: 2,
-    name: "Angular Todo List",
+    id: 6,
+    name: "Wakanda - HR Lander Page",
     description:
-      "This is an Angular-based application called Simple Todo List, designed to assist users in organizing and prioritizing their daily tasks. The application enables users to plan and manage their tasks effectively, ensuring that important tasks receive priority. By using this application, users can streamline their daily workflow and enhance their productivity. ( PS: The primary purpose to build this app is to get a fundamental understanding of Angular's functionality and working. ) ",
+      "Wakanda HR platform - a lander page developed using angular that empowers you to streamline your HR operations effortlessly. With an intuitive interface and minimal animations.",
+    url: "https://sahulkola.github.io/wakanda-lander-page/",
+    thumbnail: Wakanda,
+    techstack: ["Angular", "Tailwind", "AOS.js"],
+  },
+  {
+    id: 5,
+    name: "Task Tracker",
+    description:
+      "A to-do list app that helps users to organize and prioritize their daily tasks.  The application helps users to effectively plan and manage their tasks conveniently identifying important ones through priority marks for easy recognition.",
+    // "This is an Angular-based application called Simple Todo List, designed to assist users in organizing and prioritizing their daily tasks. The application enables users to plan and manage their tasks effectively, ensuring that important tasks receive priority. By using this application, users can streamline their daily workflow and enhance their productivity.",
     url: "https://sahulkola.github.io/angular-todo-list/",
     thumbnail: AngularTodoList,
-    techstack: ["Angular", "TypeScript"],
+    techstack: ["Angular"],
   },
   {
-    id: 3,
+    id: 5,
+    name: "My Portfolio",
+    description:
+      "This project showcases my skills and expertise in frontend development, specifically in creating dynamic and interactive user interfaces. With React's powerful components and React Router DOM's navigation capabilities, I have designed a seamless and user-friendly experience for visitors to explore my work. From responsive layouts to smooth transitions, my portfolio demonstrates my ability to create visually stunning websites that engage and captivate users.",
+    // "This is an Angular-based application called Simple Todo List, designed to assist users in organizing and prioritizing their daily tasks. The application enables users to plan and manage their tasks effectively, ensuring that important tasks receive priority. By using this application, users can streamline their daily workflow and enhance their productivity.",
+    url: "https://sahulkola.vercel.app/",
+    thumbnail: PortfolioImg,
+    techstack: ["React", "React-Router-DOM", "Tailwind", "AOS.js"],
+  },
+  {
+    id: 4,
     name: "Little Lemon Restaurant",
     description:
       "The Little Lemon website is an online platform designed to provide information and services related to the Little Lemon restaurant. It serves as a digital hub where customers can explore various aspects of the restaurant, make reservations, access menus, and stay updated with the latest news and promotions.",
@@ -116,7 +150,7 @@ export const portfolios: IPortfolio[] = [
     techstack: ["React", "React-Router-DOM", "Sass"],
   },
   {
-    id: 4,
+    id: 3,
     name: "JNTUH GPA Calc. - SGPA & CGPA Calculator",
     description:
       "A Web-based application that offers students to do mathematical computations which helps in finding accurate CGPA & SGPA with an interactive and user-friendly Graphical User Interface. It includes features like Target GPA Calculator which generates average SGPA to be scored in upcoming semesters to maintain Target GPA.The GPA score will be recorded in the database and users can track their progress by login.",
@@ -125,7 +159,7 @@ export const portfolios: IPortfolio[] = [
     techstack: ["HTML", "CSS", "Bootstrap", "MYSQL", "Flask"],
   },
   {
-    id: 5,
+    id: 2,
     name: "Budget Buddy - a personal expense Tracker",
     description:
       "This project secured top 10 position in India's Largest Build-A-Thon on Modern Application Development, a 7 Days Training Program on Building Morden Apps & Deploying on VMware Tanzu Application Service followed by 5 weeks Project Build-A-Thon conducted by SmartBridge Educational Services Pvt Ltd in association with VMware IT Academy",
@@ -134,11 +168,11 @@ export const portfolios: IPortfolio[] = [
     techstack: ["HTML", "CSS", "Bootstrap", "AOS.js", "MYSQL", "Flask"],
   },
   {
-    id: 6,
+    id: 1,
     name: "Career Hub",
     description:
       "A Job portal application that connects recruiters and job seekers where recruiters are the source of the resources, and the job seeker can find and apply for their targeted job. Users will have access to the career portal page where current openings are displayed which were uploaded by the recruiter of the company via the admin interface",
-    url: "#",
+    url: "/",
     thumbnail: CareerHub,
     techstack: ["HTML", "CSS", "MYSQL", "PHP"],
   },

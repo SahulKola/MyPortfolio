@@ -25,7 +25,7 @@ const BaseLayout = ({
           />
         </a>
       </div>
-      <section className="flex flex-col items-start justify-between h-auto">
+      <section className="flex flex-col items-start justify-between h-auto sm:h-full">
         <div>
           <h2 className="text-xl self-start mt-5 font-m">{portfolio.name}</h2>
           <p className="text-sm text-white-400 mt-2">{portfolio.description}</p>
