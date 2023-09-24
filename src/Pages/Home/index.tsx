@@ -95,7 +95,7 @@ const Hero = () => {
           </p>
           <div className="mt-8 text-center sm:text-left">
             <Link
-              to={require("../../assets/Resume-SaiKumarKola.pdf")}
+              to={require("../../assets/Resume - Sai Kumar Kola.pdf")}
               className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors mb-3 sm:mb-0"
               download="Resume - Sai Kumar Kola"
               target="_blank"
