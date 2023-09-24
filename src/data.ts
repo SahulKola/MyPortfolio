@@ -1,15 +1,15 @@
-import Jntuh from "./assets/projects/jntuh-gpa-calc.png";
-import CareerHub from "./assets/projects/career-hub.png";
-import AngularTodoList from "./assets/projects/angular-todo-list.png";
-import AngularWeatherApp from "./assets/projects/angular-weather-app.png";
-import BudgetBuddy from "./assets/projects/budget-buddy.png";
-import LittleLemon from "./assets/projects/little-lemon.png";
-import PortfolioImg from "./assets/projects/portfolio.png";
+import Jntuh from "./assets/projects/jntuh-gpa-calc.jpg";
+import CareerHub from "./assets/projects/career-hub.jpg";
+import AngularTodoList from "./assets/projects/angular-todo-list.jpg";
+import AngularWeatherApp from "./assets/projects/angular-weather-app.jpg";
+import BudgetBuddy from "./assets/projects/budget-buddy.jpg";
+import LittleLemon from "./assets/projects/little-lemon.jpg";
+import PortfolioImg from "./assets/projects/portfolio.jpg";
 import Wakanda from "./assets/projects/wakanda-lander-page.jpg";
 import HeadlinesHub from "./assets/projects/headlines-hub.jpg";
 
-import BuildAThon from "./assets/build-a-thon.png";
-import Rubiks from "./assets/rubiks.png";
+import BuildAThon from "./assets/projects/build-a-thon.jpg";
+import Rubiks from "./assets/projects/rubiks.jpg";
 
 export interface IEdu {
   id: Number;

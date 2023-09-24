@@ -13,7 +13,7 @@ const BaseLayout = ({
     <section
       data-aos="fade-down"
       data-aos-duration="400"
-      data-aos-delay={index * 200}
+      data-aos-delay={index * 50}
       className="flex flex-col items-stretch justify-start text-white-100 mb-10 mx-4"
     >
       <div className="relative min-h-[200px] h-[200px] lg:min-h-[320px] rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-grey-500">
