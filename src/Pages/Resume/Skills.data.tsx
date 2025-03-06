@@ -8,7 +8,7 @@ import {
   DiSass,
 } from "react-icons/di";
 import { IoLogoFigma } from "react-icons/io5";
-import { TbBrandVscode } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
 import {
   SiTypescript,
   SiJavascript,
@@ -62,7 +62,7 @@ export const SkillsArray: ISkill[] = [
 export const ToolsArray: ISkill[] = [
   {
     name: "VS Code",
-    url: <TbBrandVscode />,
+    url: <VscVscode />,
   },
   {
     name: "Git",

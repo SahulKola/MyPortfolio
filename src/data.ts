@@ -12,14 +12,14 @@ import BuildAThon from "./assets/projects/build-a-thon.jpg";
 import Rubiks from "./assets/projects/rubiks.jpg";
 
 export interface IEdu {
-  id: Number;
-  name: String;
-  degree: String;
-  course?: String;
-  board: String;
-  location: String;
-  year: String;
-  percentage: String;
+  id: number;
+  name: string;
+  degree: string;
+  course?: string;
+  board: string;
+  location: string;
+  year: string;
+  percentage: string;
 }
 export const Education: IEdu[] = [
   {
@@ -30,7 +30,7 @@ export const Education: IEdu[] = [
     board: "Jawaharlal Nehru Technological University",
     location: "Hyderabad",
     year: "2018-2022",
-    percentage: "7.3",
+    percentage: "7.5",
   },
   {
     id: 2,
@@ -54,22 +54,22 @@ export const Education: IEdu[] = [
 ];
 
 export interface IWorkExp {
-  id: Number;
-  name: String;
-  link: String;
-  role: String;
-  logoUrl: String;
-  location: String;
-  work: String[];
-  year: String;
+  id: number;
+  name: string;
+  link: string;
+  role: string;
+  logoUrl: string;
+  location: string;
+  work: string[];
+  year: string;
 }
-export const workExp: IWorkExp[] = [
+export const workExp: any[] = [
   {
     id: 1,
     name: "Media.net",
     link: "https://www.media.net",
     role: "Associate UI Developer",
-    logoUrl: "https://www.media.net",
+    logoUrl: "https://nanbanjobs.com/wp-content/uploads/2023/07/Media.net-Jobs-Vacancy.jpeg",
     location: "Andheri East, Mumbai (Remote)",
     work: [
       "Developed Ad variations like Keyword Blocks, Search Engine Result Pages, Interstitial Ads, and Lander Pages.",
@@ -79,8 +79,21 @@ export const workExp: IWorkExp[] = [
       "Delivered 100+ good-performing creative ads and lander pages with a 90% acceptance rate for premium publishers.",
       "Developed quality ads during the Black Friday Sale Season, with multiple ad variations.",
     ],
-    year: "May 2022 - Present",
-  },
+    year: "May 2022 - Dec 2024",
+  }, 
+  {
+    id: 2,
+    name: "Backbase",
+    link: "https://www.backbase.com/",
+    role: "Jr. Frontend Engineer",
+    logoUrl: "https://yt3.googleusercontent.com/-Debjb2qYWYt9XZTKlYtnjmckSlYXGGkWOlbpFjTNTNxT6FnGc8ql7mhKktt9p9YHmIwDKfbOA=s900-c-k-c0x00ffffff-no-rj",
+    location: "Hyderabad",
+    work: [
+      "Gained hands-on experience working with major banks in the APAC region, enhancing digital banking solutions, ensuring seamless integrations.","Worked with backend developers, designers, and product managers to integrate frontend with backend APIs. Ensured smooth data flow and state management for better app performance.", 
+      "Identified and resolved UI/UX issues by debugging layout inconsistencies and improving responsiveness. Implemented best practices for accessibility and cross-browser compatibility to deliver a seamless digital banking experience"
+    ],
+    year: "Jan 2025 - Present"
+  }
 ];
 export interface IPortfolio {
   id: number;

@@ -1,7 +1,6 @@
 import SectionHeader from "../../components/SectionHeader";
-import { portfolios } from "../../data";
+import { portfolios, IPortfolio } from "../../data";
 import { useEffect } from "react";
-import { IPortfolio } from "../../data";
 import BaseLayout from "./BaseLayout";
 import Achievements from "./Achievements";
 
@@ -15,7 +14,7 @@ const Portfolio = () => {
       <section className="wrapper mt-10">
         <section className="grid md:grid-cols-2 -mx-4">
           {portfolios.map((portfolio: IPortfolio, index) => (
-            <BaseLayout index={index} flag="portfolio" portfolio={portfolio} />
+            <BaseLayout key={portfolio.id} index={index} flag="portfolio" portfolio={portfolio} />
           ))}
         </section>
         <Achievements />

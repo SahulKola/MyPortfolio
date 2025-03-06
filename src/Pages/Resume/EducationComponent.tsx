@@ -1,15 +1,5 @@
 import { HiReceiptPercent } from "react-icons/hi2";
-import { Education } from "../../data";
-interface IEdu {
-  id: Number;
-  name: String;
-  degree: String;
-  course?: String;
-  board: String;
-  location: String;
-  year: String;
-  percentage: String;
-}
+import { Education, IEdu } from "../../data";
 
 const EducationComponent = () => {
   return (
@@ -17,6 +7,7 @@ const EducationComponent = () => {
       <h2 className="heading">Education</h2>
       {Education.map((degree: IEdu, index) => (
         <section
+          key={degree.id}
           data-aos="fade-down"
           data-aos-duration="300"
           data-aos-delay={index * 100}

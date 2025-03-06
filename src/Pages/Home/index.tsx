@@ -71,19 +71,19 @@ const Hero = () => {
           data-aos-duration="500"
           className="flex flex-col items-center md:items-start grow-0 shrink-1 basis-1/2 mt-10 md:mt-0 md:pl-12"
         >
-          <p className="text-xl text-white-400">UI Developer</p>
+          <p className="text-xl text-white-400">Frontend Engineer</p>
           <h2 className="mt-2 text-5xl text-white-100 font-sm">
             Sai Kumar Kola
           </h2>
           <div className="mt-3 flex justify-center sm:justify-start items-center gap-4">
             {iconsArray.map(icon => (
-              <Link key={icon.url} to={icon.url} target="_blank">
-                <span
-                  className={`text-white-500 text-2xl hover:text-white-100 hover:-translate-y-1 transition-all cursor-pointer`}
-                >
+                <Link key={icon.url} to={icon.url} target="_blank">
+                  <span
+                    className={`text-white-500 text-2xl hover:text-white-100 hover:-translate-y-1 transition-all cursor-pointer`}
+                  >
                   {icon.name}
-                </span>
-              </Link>
+                  </span>
+                </Link>
             ))}
           </div>
           <p className=" mt-5 text-base text-white-400">
@@ -95,9 +95,8 @@ const Hero = () => {
           </p>
           <div className="mt-8 text-center sm:text-left">
             <Link
-              to={require("../../assets/Resume - Sai Kumar Kola.pdf")}
+              to="/resume.pdf"
               className="btn border-accent hover:bg-accent hover:text-grey-400 transition-colors mb-3 sm:mb-0"
-              download="Resume - Sai Kumar Kola"
               target="_blank"
             >
               Download CV
@@ -129,7 +128,7 @@ const Hero = () => {
                   {child.title}
                 </h3>
               </div>
-              <p className="text-base mt-2 text-white-400">{child.desc}</p>
+              <p className="text-base mt-4 text-white-400">{child.desc}</p>
             </section>
           ))}
         </section>

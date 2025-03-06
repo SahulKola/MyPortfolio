@@ -3,7 +3,7 @@ import { ToolsArray, SkillsArray } from "./Skills.data";
 
 const Skills = () => {
   return (
-    <section>
+    <section className="mb-8">
       <h2 className="heading">Skills</h2>
       <section className="grid md:grid-cols-2">
         <section className="mb-5 md:mb-0">

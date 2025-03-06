@@ -35,8 +35,8 @@ const BaseLayout = ({
             {flag === "portfolio" ? "TechStack" : portfolio.prop}
           </h3>
           <div className="-mx-2 flex flex-wrap">
-            {portfolio.techstack.map((m: string) => (
-              <span className="techstack mt-2">{m}</span>
+            {portfolio.techstack.map((m: string, index) => (
+              <span key={index} className="techstack mt-2">{m}</span>
             ))}
           </div>
         </div>
